@@ -1,5 +1,14 @@
 import java.io.*;
 import java.util.*;
+import java.util.Properties;
+
+import javax.mail.Message;
+import javax.mail.MessagingException;
+import javax.mail.PasswordAuthentication;
+import javax.mail.Session;
+import javax.mail.Transport;
+import javax.mail.internet.InternetAddress;
+import javax.mail.internet.MimeMessage;
 
 /**
  * Created with IntelliJ IDEA.
@@ -19,6 +28,9 @@ public class main {
         ArrayList<String> removedPages = new ArrayList<String>();
         ArrayList<String> newPages = new ArrayList<String>();
         ArrayList<String> editedPages = new ArrayList<String>();
+        final String sender = "softaria.test.project@gmail.com";
+        final String password = "softariatest";
+        final String receiver = "softaria.test.project@gmail.com";
 
         yesterday.putAll(fillTable("yesterday.txt"));
         today.putAll(fillTable("today.txt"));
@@ -26,27 +38,18 @@ public class main {
         Set<String> keys = yesterday.keySet();
 
         for (String key : keys) {
-
             if (!today.containsKey(key)) {
-
                 removedPages.add(key);
-
             }
             else {
-
                 if (!yesterday.get(key).equals(today.get(key))) {
-
                         editedPages.add(key);
-
                 }
             }
-
             newPages.remove(key);
         }
 
-        System.out.println(newPages.toString());
-        System.out.println(removedPages.toString());
-        System.out.println(editedPages.toString());
+        sendEmail(sender, password, receiver, createEmail(removedPages, editedPages, newPages));
 
     }
 
@@ -83,6 +86,76 @@ public class main {
             }
         }
         return result;
+    }
+
+    private static String createEmail(ArrayList<String> removedPages, ArrayList<String> editedPages, ArrayList<String> newPages) {
+        final String beginning = "Здравствуйте, дорогая и.о. секретаря\n\nЗа последние сутки во вверенных Вам сайтах произошли следующие изменения:\n";
+        final String firstUrlStr = "Исчезли следующие страницы:\n";
+        final String secondUrlStr = "Появились следующие новые страницы:\n";
+        final String thirdUrlStr = "Изменились следующие страницы:\n";
+        final String ending = "\nС уважением, любящая вас,\nавтоматизированная система мониторинга.";
+        String firstUrl = "";
+        String secondUrl = "";
+        String thirdUrl = "";
+        String email = beginning;
+        if (!removedPages.isEmpty()) {
+            for (String url : removedPages) {
+                firstUrl += url + "\n";
+            }
+            email += firstUrlStr + firstUrl;
+        }
+        if (!newPages.isEmpty()) {
+            for (String url : newPages) {
+                secondUrl += url + "\n";
+            }
+            email += secondUrlStr + secondUrl;
+        }
+        if (!editedPages.isEmpty()) {
+            for (String url : editedPages) {
+                thirdUrl += url + "\n";
+            }
+            email += thirdUrlStr + thirdUrl;
+        }
+        email += ending;
+        return email;
+    }
+
+    public static void sendEmail(String sender, String pass, String receiver, String msg) {
+
+        final String username = sender;
+        final String password = pass;
+        final String subject = "Изменения страниц сайтов";
+        final String printout = "Письмо отправлено";
+
+        Properties props = new Properties();                //properties are for gmail
+        props.put("mail.smtp.auth", "true");
+        props.put("mail.smtp.starttls.enable", "true");
+        props.put("mail.smtp.host", "smtp.gmail.com");
+        props.put("mail.smtp.port", "587");
+
+        Session session = Session.getInstance(props,
+                new javax.mail.Authenticator() {
+                    protected PasswordAuthentication getPasswordAuthentication() {
+                        return new PasswordAuthentication(username, password);
+                    }
+                });
+
+        try {
+
+            Message message = new MimeMessage(session);
+            message.setFrom(new InternetAddress(username));
+            message.setRecipients(Message.RecipientType.TO,
+                    InternetAddress.parse(receiver));
+            message.setSubject(subject);
+            message.setText(msg);
+
+            Transport.send(message);
+
+            System.out.println(printout);
+
+        } catch (MessagingException e) {
+            e.printStackTrace();
+        }
     }
 
 
