@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f724e104-0fb6-4b71-87f3-68354447a184" name="Default" comment="">
-      <change type="MOVED" beforePath="C:\Users\ТС\IdeaProjects\HTMLcomparison\src\main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="f724e104-0fb6-4b71-87f3-68354447a184" name="Default" comment="" />
     <ignored path="HTML comparison.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/main.java" changelist="f724e104-0fb6-4b71-87f3-68354447a184" time="1385012862784" ignored="false" />
     <file path="/today.txt" changelist="f724e104-0fb6-4b71-87f3-68354447a184" time="1384678390994" ignored="false" />
-    <file path="/Dummy.txt" changelist="f724e104-0fb6-4b71-87f3-68354447a184" time="1385014646518" ignored="false" />
-    <file path="/Main.java" changelist="f724e104-0fb6-4b71-87f3-68354447a184" time="1385015406560" ignored="false" />
+    <file path="/Dummy.txt" changelist="f724e104-0fb6-4b71-87f3-68354447a184" time="1385015620841" ignored="false" />
+    <file path="/Main.java" changelist="f724e104-0fb6-4b71-87f3-68354447a184" time="1385015851444" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,16 +71,13 @@
       <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="79" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.3321492">
+            <state line="144" column="47" selection-start="5264" selection-end="5264" vertical-scroll-proportion="1.0309091">
               <folding>
                 <element signature="e#440#456#0" expanded="true" />
                 <element signature="e#511#527#0" expanded="true" />
                 <element signature="e#585#593#0" expanded="true" />
                 <element signature="e#647#655#0" expanded="true" />
                 <element signature="e#712#720#0" expanded="true" />
-                <element signature="method#fillTable#0;class#Main#0" expanded="false" />
-                <element signature="method#createEmail#0;class#Main#0" expanded="false" />
-                <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -164,6 +158,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -202,7 +197,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -218,12 +212,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -261,6 +255,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -286,19 +293,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -376,7 +370,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -474,9 +468,6 @@
             <element signature="e#585#593#0" expanded="true" />
             <element signature="e#647#655#0" expanded="true" />
             <element signature="e#712#720#0" expanded="true" />
-            <element signature="method#fillTable#0;class#Main#0" expanded="false" />
-            <element signature="method#createEmail#0;class#Main#0" expanded="false" />
-            <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -504,9 +495,6 @@
             <element signature="e#585#593#0" expanded="true" />
             <element signature="e#647#655#0" expanded="true" />
             <element signature="e#712#720#0" expanded="true" />
-            <element signature="method#fillTable#0;class#Main#0" expanded="false" />
-            <element signature="method#createEmail#0;class#Main#0" expanded="false" />
-            <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -534,9 +522,6 @@
             <element signature="e#585#593#0" expanded="true" />
             <element signature="e#647#655#0" expanded="true" />
             <element signature="e#712#720#0" expanded="true" />
-            <element signature="method#fillTable#0;class#Main#0" expanded="false" />
-            <element signature="method#createEmail#0;class#Main#0" expanded="false" />
-            <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -564,9 +549,6 @@
             <element signature="e#585#593#0" expanded="true" />
             <element signature="e#647#655#0" expanded="true" />
             <element signature="e#712#720#0" expanded="true" />
-            <element signature="method#fillTable#0;class#Main#0" expanded="false" />
-            <element signature="method#createEmail#0;class#Main#0" expanded="false" />
-            <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -606,16 +588,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="79" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.3321492">
+        <state line="144" column="47" selection-start="5264" selection-end="5264" vertical-scroll-proportion="1.0309091">
           <folding>
             <element signature="e#440#456#0" expanded="true" />
             <element signature="e#511#527#0" expanded="true" />
             <element signature="e#585#593#0" expanded="true" />
             <element signature="e#647#655#0" expanded="true" />
             <element signature="e#712#720#0" expanded="true" />
-            <element signature="method#fillTable#0;class#Main#0" expanded="false" />
-            <element signature="method#createEmail#0;class#Main#0" expanded="false" />
-            <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>

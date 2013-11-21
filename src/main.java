@@ -28,7 +28,8 @@ public class Main {
         newPages.addAll(today.keySet());
         Set<String> keys = yesterday.keySet();
 
-        for (String key : keys) {                                        //pages comparison, fills in the ArrayLists
+        //pages comparison, fills in the ArrayLists
+        for (String key : keys) {
             if (!today.containsKey(key)) {
                 removedPages.add(key);
             }
@@ -40,7 +41,8 @@ public class Main {
             newPages.remove(key);
         }
 
-        sendEmail(sender, password, receiver, createEmail(removedPages, editedPages, newPages));
+        String message = createEmail(removedPages, editedPages, newPages);
+        sendEmail(sender, password, receiver, message);
 
     }
 
@@ -51,7 +53,6 @@ public class Main {
         InputStream file;
         BufferedReader br = null;
         String line;
-
         try {
             result = new HashMap<String, String>();
             file = new FileInputStream(fileName);
@@ -66,15 +67,13 @@ public class Main {
         }
 
         finally {
-
             try {
                 if (br != null) {
                     br.close();
                 }
             }
-
             catch (Exception ex) {
-                ex.printStackTrace();
+                System.out.println(ex.getMessage());
             }
         }
         return result;
@@ -121,7 +120,8 @@ public class Main {
         final String subject = "Изменения страниц сайтов";
         final String printout = "Email has been sent successfully to " + receiver;
 
-        Properties props = new Properties();                //properties for gmail
+        //properties for gmail
+        Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", "smtp.gmail.com");
@@ -138,8 +138,7 @@ public class Main {
 
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(username));
-            message.setRecipients(Message.RecipientType.TO,
-                    InternetAddress.parse(receiver));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(receiver));
             message.setSubject(subject);
             message.setText(msg);
 
@@ -148,7 +147,7 @@ public class Main {
             System.out.println(printout);
 
         } catch (MessagingException e) {
-            e.printStackTrace();
+            System.out.println(e.getMessage());
         }
     }
 
