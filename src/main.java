@@ -10,15 +10,6 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-/**
- * Created with IntelliJ IDEA.
- * User: Sandra
- * Date: 17.11.13
- * Time: 15:22
- * To change this template use File | Settings | File Templates.
- */
-
-
 public class main {
 
     public static void main (String args []) {
@@ -125,7 +116,7 @@ public class main {
         final String username = sender;
         final String password = pass;
         final String subject = "Изменения страниц сайтов";
-        final String printout = "Письмо отправлено";
+        final String printout = "Письмо отправлено по адресу: " + receiver;
 
         Properties props = new Properties();                //properties are for gmail
         props.put("mail.smtp.auth", "true");
