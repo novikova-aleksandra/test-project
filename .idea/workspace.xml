@@ -2,17 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f724e104-0fb6-4b71-87f3-68354447a184" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/javax_mail.xml" />
-      <change type="DELETED" beforePath="C:\Users\ТС\IdeaProjects\HTMLcomparison\.idea\libraries\mail.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/HTML comparison.iml" afterPath="$PROJECT_DIR$/HTML comparison.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.java" afterPath="$PROJECT_DIR$/src/main.java" />
+      <change type="MOVED" beforePath="C:\Users\ТС\IdeaProjects\HTMLcomparison\src\main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HTML comparison.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/main.java" changelist="f724e104-0fb6-4b71-87f3-68354447a184" time="1385012862784" ignored="false" />
     <file path="/today.txt" changelist="f724e104-0fb6-4b71-87f3-68354447a184" time="1384678390994" ignored="false" />
-    <file path="/Dummy.txt" changelist="f724e104-0fb6-4b71-87f3-68354447a184" time="1385012014845" ignored="false" />
+    <file path="/Dummy.txt" changelist="f724e104-0fb6-4b71-87f3-68354447a184" time="1385014646518" ignored="false" />
+    <file path="/Main.java" changelist="f724e104-0fb6-4b71-87f3-68354447a184" time="1385015406560" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,16 +71,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="main.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main.java">
+      <file leaf-file-name="Main.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="62" selection-start="4034" selection-end="4034" vertical-scroll-proportion="3.0">
+            <state line="39" column="79" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.3321492">
               <folding>
                 <element signature="e#440#456#0" expanded="true" />
                 <element signature="e#511#527#0" expanded="true" />
                 <element signature="e#585#593#0" expanded="true" />
                 <element signature="e#647#655#0" expanded="true" />
                 <element signature="e#712#720#0" expanded="true" />
+                <element signature="method#fillTable#0;class#Main#0" expanded="false" />
+                <element signature="method#createEmail#0;class#Main#0" expanded="false" />
+                <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -127,6 +128,7 @@
         <option value="$PROJECT_DIR$/yesterday.txt" />
         <option value="$PROJECT_DIR$/today.txt" />
         <option value="$PROJECT_DIR$/src/main.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -162,7 +164,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -185,8 +186,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTML comparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HTMLcomparison" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -214,9 +230,9 @@
       <recent name="C:\Users\Sandra\IdeaProjects\HTML comparison" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.main">
-    <configuration default="false" name="main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
+  <component name="RunManager" selected="Application.Main">
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -320,11 +336,11 @@
       <method />
     </configuration>
     <list size="1">
-      <item index="0" class="java.lang.String" itemvalue="Application.main" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="Application.main" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
@@ -370,7 +386,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33069083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -380,6 +395,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33069083" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
     </layout>
@@ -449,7 +465,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
@@ -458,6 +474,9 @@
             <element signature="e#585#593#0" expanded="true" />
             <element signature="e#647#655#0" expanded="true" />
             <element signature="e#712#720#0" expanded="true" />
+            <element signature="method#fillTable#0;class#Main#0" expanded="false" />
+            <element signature="method#createEmail#0;class#Main#0" expanded="false" />
+            <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -476,7 +495,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
@@ -485,6 +504,9 @@
             <element signature="e#585#593#0" expanded="true" />
             <element signature="e#647#655#0" expanded="true" />
             <element signature="e#712#720#0" expanded="true" />
+            <element signature="method#fillTable#0;class#Main#0" expanded="false" />
+            <element signature="method#createEmail#0;class#Main#0" expanded="false" />
+            <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -503,7 +525,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding>
@@ -512,6 +534,9 @@
             <element signature="e#585#593#0" expanded="true" />
             <element signature="e#647#655#0" expanded="true" />
             <element signature="e#712#720#0" expanded="true" />
+            <element signature="method#fillTable#0;class#Main#0" expanded="false" />
+            <element signature="method#createEmail#0;class#Main#0" expanded="false" />
+            <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -530,7 +555,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="69" selection-start="692" selection-end="692" vertical-scroll-proportion="0.0">
           <folding>
@@ -539,6 +564,9 @@
             <element signature="e#585#593#0" expanded="true" />
             <element signature="e#647#655#0" expanded="true" />
             <element signature="e#712#720#0" expanded="true" />
+            <element signature="method#fillTable#0;class#Main#0" expanded="false" />
+            <element signature="method#createEmail#0;class#Main#0" expanded="false" />
+            <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -559,9 +587,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HTML comparison.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yesterday.txt">
@@ -578,15 +604,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="62" selection-start="4034" selection-end="4034" vertical-scroll-proportion="3.0">
+        <state line="39" column="79" selection-start="1503" selection-end="1503" vertical-scroll-proportion="0.3321492">
           <folding>
             <element signature="e#440#456#0" expanded="true" />
             <element signature="e#511#527#0" expanded="true" />
             <element signature="e#585#593#0" expanded="true" />
             <element signature="e#647#655#0" expanded="true" />
             <element signature="e#712#720#0" expanded="true" />
+            <element signature="method#fillTable#0;class#Main#0" expanded="false" />
+            <element signature="method#createEmail#0;class#Main#0" expanded="false" />
+            <element signature="method#sendEmail#0;class#Main#0" expanded="false" />
           </folding>
         </state>
       </provider>

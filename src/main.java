@@ -10,7 +10,7 @@ import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
-public class main {
+public class Main {
 
     public static void main (String args []) {
 
@@ -28,7 +28,7 @@ public class main {
         newPages.addAll(today.keySet());
         Set<String> keys = yesterday.keySet();
 
-        for (String key : keys) {
+        for (String key : keys) {                                        //pages comparison, fills in the ArrayLists
             if (!today.containsKey(key)) {
                 removedPages.add(key);
             }
@@ -44,6 +44,7 @@ public class main {
 
     }
 
+    //fills the HashMap with data from file (first line - key, second line - value)
     private static HashMap<String, String> fillTable(String fileName) {
 
         HashMap<String, String> result = null;
@@ -79,6 +80,7 @@ public class main {
         return result;
     }
 
+    //compiles Email with new, removed and edited pages
     private static String createEmail(ArrayList<String> removedPages, ArrayList<String> editedPages, ArrayList<String> newPages) {
         final String beginning = "Здравствуйте, дорогая и.о. секретаря\n\nЗа последние сутки во вверенных Вам сайтах произошли следующие изменения:\n";
         final String firstUrlStr = "Исчезли следующие страницы:\n";
@@ -111,14 +113,15 @@ public class main {
         return email;
     }
 
-    public static void sendEmail(String sender, String pass, String receiver, String msg) {
+    //sends the Email, works for gmail accounts
+    private static void sendEmail(String sender, String pass, String receiver, String msg) {
 
         final String username = sender;
         final String password = pass;
         final String subject = "Изменения страниц сайтов";
-        final String printout = "Письмо отправлено по адресу: " + receiver;
+        final String printout = "Email has been sent successfully to " + receiver;
 
-        Properties props = new Properties();                //properties are for gmail
+        Properties props = new Properties();                //properties for gmail
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", "smtp.gmail.com");
